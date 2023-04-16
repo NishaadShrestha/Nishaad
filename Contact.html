@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+</head>
+<body>
+    
+   <h1>
+    This is the Contact Page
+   </h1>
+
+   <form action="mailto:asdadasda@asdasdas.com?subject=Hi&cc=leonardo@gmail.com" style="width: 50%;" method="post" enctype="text/plain">
+    <fieldset>
+      <legend>
+        Your Info
+      </legend>
+
+      <div>
+        <label for="mail">Email:</label>
+        <input type="email" id="mail" name="Mail" placeholder="Email" required>
+      </div>
+      
+      <br>
+
+      <div>
+        <label for="fullname">Name:</label>
+        <input type="text" id="fullname" name="Fullname" placeholder="Your Full Name" required>
+      </div>
+
+      <br>
+
+      <div>
+        <span>Your Gender</span>
+        <input type="radio" id="male" name="Gender" value="male">
+        <label for="male">Male</label>
+
+        <input type="radio" id="male" name="Gender" value="female">
+        <label for="female">Female</label>
+      </div>
+
+      <br>
+
+      <div>
+        <span>Your Hobbies</span>
+        <input type="checkbox" id="dance" name="Hobbies" value="dance">
+        <label for="dance">Dance</label>
+
+        <input type="checkbox" id="sing" name="Hobbies" value="sing">
+        <label for="sing">Sing</label>
+      </div>
+
+      <br>
+
+      <div>
+        <label for="country">Select Country:</label>
+        <select name="Country" id="country">
+          <option value="nepal">Nepal</option>
+          <option value="china">China</option>
+          <option value="india">India</option>
+        </select>
+      </div>
+
+      <br>
+
+      <div>
+        <label for="coffee">Select Coffee</label>
+
+        <select name="Coffee" id="coffee">
+
+          <optgroup label="Hard Coffee">
+            <option value="Expresso">Expresso</option>
+            <option value="Mocha">Mocha</option>
+          </optgroup>
+          
+          <optgroup label="Cold Coffee">
+            <option value="IcedCoffee">IcedCoffee</option>
+            <option value="Icedamericano">Iced Americano</option>
+          </optgroup>
+
+        </select>
+      </div>
+
+      <br>
+
+      <div>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </div>
+
+    </fieldset>
+   </form>
+
+</body>
+</html>
